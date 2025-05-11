@@ -68,23 +68,22 @@ export const deleteComment = async (req, res) => {
 }
 
 export const getComments = async (req, res) => {
-  try {
-    const { postId } = req.params;
-    
-    const comments = await Comment.find({ postId }).sort({ createdAt: -1 })
-
-    if (comments.length === 0) {
-      return res.status(404).send(
-        { 
-            message: "No hay comentarios para esta publicación" 
+    try {
+        const { postId } = req.params
+        const comments = await Comment.find({ postId }).sort({ createdAt: -1 })
+        if (comments.length === 0) {
+            return res.status(200).send({
+                message: "No hay comentarios para esta publicación",
+                comments: [] 
+            })
+        }
+        res.status(200).send(comments);
+    } catch (error) {
+        console.error('Error al obtener los comentarios:', error)
+        res.status(500).send({
+            message: "Error al obtener los comentarios",
+            error
         })
     }
-
-    res.status(200).send(comments)
-  } catch (error) {
-    res.status(500).send({
-      message: "Error al obtener los comentarios",
-      error
-    })
-  }
 }
+
