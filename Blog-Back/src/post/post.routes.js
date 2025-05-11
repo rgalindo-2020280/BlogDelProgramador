@@ -13,7 +13,7 @@ api.get(
 )
 
 api.get(
-    '/posts/:id',
+    '/:course',
     getPostsByCourse
 )
 
