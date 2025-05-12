@@ -2,6 +2,7 @@ import { Router } from 'express'
 import { 
     getAllPosts,
     getPostsByCourse,
+    getPostsByYear,
     updatePost
 } from './post.controller.js'
 
@@ -18,8 +19,13 @@ api.get(
 )
 
 api.put(
-    '/post/:id',
+    '/:id',
     updatePost
+)
+
+api.get(
+    '/year/:year',
+    getPostsByYear
 )
 
 export default api
