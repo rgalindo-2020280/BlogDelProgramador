@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h3 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+select {
+  width: 100%;
+  padding: 14px;
+  margin: 20px 0;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: #feffed;
+  font-size: 16px;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+select:hover, select:focus {
+  border-color: #3498db;
+  background-color: #eaf2f8;
+  outline: none;
+}
+
+.post-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #3498db;
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post-card h3 {
+  font-size: 28px;
+  color: purple;
+  margin-bottom: 15px;
+}
+
+.post-card p {
+  font-size: 16px;
+  color: black;
+}
+
+.post-card button {
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.post-card button:hover {
+  background-color: #2980b9;
+}
+
+.comment-form {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.comment-form:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  border-color: #3498db;
+  background-color: #eaf2f8;
+  outline: none;
+}
+
+.comment-form button {
+  background-color: #2ecc71;
+  border-radius: 30px;
+  padding: 12px 30px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #27ae60;
+}
+
+.comment-list {
+  margin-top: 25px;
+}
+
+.comment-item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.comment-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.comment-item h4 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.comment-item p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 12px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
