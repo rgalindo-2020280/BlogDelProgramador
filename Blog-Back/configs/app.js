@@ -27,18 +27,24 @@ const createPosts = async () => {
                 title: "Curso de React: Introducción",
                 description: "Este es el primer módulo del curso de React, donde aprenderás lo básico sobre este framework.",
                 course: "Taller",
+                year: 2023,
+                projectLink: "https://www.youtube.com/watch?v=O2UDuwij0UE&t=1s",
                 createdAt: new Date()
             },
             {
                 title: "Curso de Node.js: Backend avanzado",
                 description: "En este curso profundizaremos en el desarrollo de aplicaciones backend con Node.js.",
                 course: "Taller",
+                year: 2023,
+                projectLink: "https://www.reactjs.org",
                 createdAt: new Date()
             },
             {
                 title: "Curso de MongoDB: Base de datos NoSQL",
                 description: "Aprende todo sobre MongoDB y cómo utilizar esta base de datos NoSQL en aplicaciones modernas.",
                 course: "Tecnología",
+                year: 2023,
+                projectLink: "https://www.reactjs.org",
                 createdAt: new Date()
             }
         ]
