@@ -7,11 +7,13 @@ const PostList = () => {
     const [year, setYear] = useState('')
     const { posts, loading, error } = usePosts(course, year)
 
+    const sortedPosts = posts.sort((a, b) => b.year - a.year);
+
     useEffect(() => {
         console.log('Curso seleccionado:', course);
         console.log('Año seleccionado:', year);
     }, [course, year])
-
+    
     return (
         <div className="container">
             <select onChange={(e) => setCourse(e.target.value)} value={course}>
