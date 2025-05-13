@@ -61,7 +61,7 @@ export const getAllPosts = async (req, res) => {
 export const getPostsByYear = async (req, res) => {
     try {
         const { year } = req.params
-        const posts = await Post.find({ year }).sort({ createdAt: -1 })
+        const posts = await Post.find({ year }).sort({ year: -1 })
         if (posts.length === 0) {
             return res.status(404).send(
                 { 
