@@ -1,6 +1,7 @@
 import React from 'react'
 
 const CommentList = ({ comments, onEditComment, onDeleteComment }) => {
+    const sortedComments = [...comments].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
     return (
         <div className="comment-list">
             {comments.map((comment) => (
