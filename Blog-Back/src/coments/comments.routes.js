@@ -6,10 +6,13 @@ import {
     updateComment
 } from './comments.controller.js'
 
+import { addCommentValidator, updateCommentValidator } from '../../helpers/validator.js'
+
 const api = Router();
 
 api.post(
     '/comment',
+    [addCommentValidator],
     addComment
 )
 
@@ -25,6 +28,7 @@ api.delete(
 
 api.put(
     '/comment/:id',
+    [updateCommentValidator],
     updateComment
 )
 
